@@ -56,14 +56,5 @@
       <description>hugo安装指令 root目录下config.toml中的头部要改成： 1 2 3 4 5 baseURL = &amp;#34;/&amp;#34; themesDir = &amp;#34;themes&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;Zen LU&amp;#34; theme = &amp;#34;m10c&amp;#34; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</description>
     </item>
     
-    <item>
-      <title>This is a hidden post.</title>
-      <link>https://lczen.github.io/post/hidden-post/</link>
-      <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
-      
-      <guid>https://lczen.github.io/post/hidden-post/</guid>
-      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
