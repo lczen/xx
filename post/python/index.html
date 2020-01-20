@@ -48,7 +48,7 @@
 <meta itemprop="description" content="Python基础 Python运行方式 解释运行 新建py文件，直接运行 1 2 %%writefile print_str.py print(&#34;欢迎大家学习课程内容！&#34;) 交互运行 ipython,">
 <meta itemprop="datePublished" content="2020-01-17T23:08:43&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-17T23:08:43&#43;08:00" />
-<meta itemprop="wordCount" content="3913">
+<meta itemprop="wordCount" content="3864">
 
 
 
@@ -137,37 +137,58 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#python基础">Python基础</a>
+    <li><a href="#python基础">Python基础</a></li>
+    <li><a href="#python运行方式">Python运行方式</a>
       <ul>
-        <li><a href="#python运行方式">Python运行方式</a></li>
-        <li><a href="#2python标识符">2.Python标识符</a></li>
-        <li><a href="#4好的命名习惯">4.好的命名习惯</a></li>
-        <li><a href="#5操作符优先级">5.操作符优先级</a></li>
-        <li><a href="#6取商运算和开方">6.取商运算和开方</a></li>
+        <li><a href="#解释运行">解释运行</a></li>
+        <li><a href="#交互运行">交互运行</a></li>
+      </ul>
+    </li>
+    <li><a href="#python标识符">Python标识符</a></li>
+    <li><a href="#好的命名习惯">好的命名习惯</a></li>
+    <li><a href="#操作符优先级">操作符优先级</a></li>
+    <li><a href="#取商运算和开方">取商运算和开方</a>
+      <ul>
         <li><a href="#7in和not-in操作适用于str">7.in和not in操作适用于str</a></li>
         <li><a href="#8赋值操作">8.赋值操作</a></li>
       </ul>
     </li>
-    <li><a href="#二python基本数据类型与数据结构">二.Python基本数据类型与数据结构</a>
+    <li><a href="#基本数据类型与数据结构">基本数据类型与数据结构</a>
       <ul>
-        <li><a href="#1基本数据类型">1.基本数据类型</a></li>
+        <li><a href="#基本数据类型">基本数据类型</a></li>
+        <li><a href="#数值型">数值型</a></li>
+        <li><a href="#字符串型">字符串型</a></li>
       </ul>
     </li>
-    <li><a href="#三文件操作">三.文件操作</a>
+    <li><a href="#数据结构">数据结构</a>
       <ul>
-        <li><a href="#31文件读">3.1.文件读</a></li>
-        <li><a href="#32文件写">3.2文件写</a></li>
-        <li><a href="#33-面向对象">3.3 面向对象</a></li>
+        <li><a href="#列表list">列表list</a></li>
+        <li><a href="#元组tuple">元组tuple</a></li>
+        <li><a href="#集合set去重非常好用">集合set(去重非常好用)</a></li>
+        <li><a href="#字典">字典</a></li>
       </ul>
     </li>
+    <li><a href="#声明statement与expression表达式">声明Statement与Expression表达式</a></li>
+    <li><a href="#判断if-if-else-if-elif-elif与三元表达式">判断：if， if else ,if elif elif与三元表达式</a></li>
+    <li><a href="#列表推导式list-comprehensions可迭代对象iterable与迭代器iterator生成器generator">列表推导式List Comprehensions，可迭代对象Iterable与迭代器iterator,生成器generator</a></li>
+    <li><a href="#处理异常">处理异常</a></li>
+    <li><a href="#函数定义">函数定义</a></li>
+    <li><a href="#filter和map和reduce">filter和map和reduce</a></li>
+    <li><a href="#文件操作">文件操作</a>
+      <ul>
+        <li><a href="#文件读">文件读</a></li>
+        <li><a href="#文件写">文件写</a></li>
+      </ul>
+    </li>
+    <li><a href="#面向对象">面向对象</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <h2 id="python基础">Python基础</h2>
-<h3 id="python运行方式">Python运行方式</h3>
-<h4 id="解释运行">解释运行</h4>
+<h2 id="python运行方式">Python运行方式</h2>
+<h3 id="解释运行">解释运行</h3>
 <p>新建py文件，直接运行</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -179,9 +200,9 @@
 <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">欢迎大家学习课程内容！</span><span class="s2">&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="交互运行">交互运行</h4>
+</div><h3 id="交互运行">交互运行</h3>
 <p>ipython, notebook</p>
-<h3 id="2python标识符">2.Python标识符</h3>
+<h2 id="python标识符">Python标识符</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -196,7 +217,7 @@
 <span class="nb">str</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">小象学院</span><span class="s1">&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="4好的命名习惯">4.好的命名习惯</h3>
+</div><h2 id="好的命名习惯">好的命名习惯</h2>
 <blockquote>
 <ul>
 <li>变量，函数或方法:salary,houseworker,booksname</li>
@@ -204,14 +225,26 @@
 <li>类：BankAccount,Employee,Company,OrderedDict #骆峰命名法</li>
 </ul>
 </blockquote>
-<h3 id="5操作符优先级">5.操作符优先级</h3>
-<p>第1名 - 函数调用、寻址、下标
+<h2 id="操作符优先级">操作符优先级</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">第1名 - 函数调用、寻址、下标
 第2名 - 幂运算 **
 第3名 - 翻转运算符 ~
 第4名 - 正负号
 第5名 - *、/、%
-第6名 - +、-</p>
-<h3 id="6取商运算和开方">6.取商运算和开方</h3>
+第6名 - +、-
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="取商运算和开方">取商运算和开方</h2>
 <p>a//b #取商
 a**0.5 #开方</p>
 <h3 id="7in和not-in操作适用于str">7.in和not in操作适用于str</h3>
@@ -240,15 +273,15 @@ a**0.5 #开方</p>
 <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="c1">#交换赋值</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="二python基本数据类型与数据结构">二.Python基本数据类型与数据结构</h2>
-<h3 id="1基本数据类型">1.基本数据类型</h3>
+</div><h2 id="基本数据类型与数据结构">基本数据类型与数据结构</h2>
+<h3 id="基本数据类型">基本数据类型</h3>
 <p>类型：
 number：
 int,float,complex
 boolean,String,List,Tuple,Dictionary
 类型转换：
 int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
-<h4 id="11数值型">1.1数值型</h4>
+<h3 id="数值型">数值型</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -315,7 +348,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="nb">round</span><span class="p">(</span><span class="n">pi</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="12字符串型">1.2字符串型</h4>
+</div><h3 id="字符串型">字符串型</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -370,8 +403,8 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="n">str3</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">cn</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="13数据结构">1.3数据结构</h4>
-<h5 id="131-列表list">1.3.1 列表list</h5>
+</div><h2 id="数据结构">数据结构</h2>
+<h3 id="列表list">列表list</h3>
 <p>列表[]:任意元素类型对象的序列</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -443,7 +476,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="nb">sorted</span><span class="p">(</span><span class="n">tmp_strs</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">)</span> <span class="c1">#根据小写后的结果字母序排序</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="132-元组tuple">1.3.2 元组tuple</h5>
+</div><h3 id="元组tuple">元组tuple</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -468,7 +501,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="n">tup</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="p">]</span> <span class="c1">#元组的切片拼接和list一样</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="133-集合set去重非常好用">1.3.3 集合set(去重非常好用)</h5>
+</div><h3 id="集合set去重非常好用">集合set(去重非常好用)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -483,7 +516,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="nb">set</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="134-字典">1.3.4 字典</h5>
+</div><h3 id="字典">字典</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -528,7 +561,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="n">od1</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">b</span><span class="s1">&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">9</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="135-声明statement与expression表达式">1.3.5 声明Statement与Expression表达式</h4>
+</div><h2 id="声明statement与expression表达式">声明Statement与Expression表达式</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -557,7 +590,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="nb">eval</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">a+b+5</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="136-判断if-if-else-if-elif-elif与三元表达式">1.3.6 判断：if， if else ,if elif elif与三元表达式</h4>
+</div><h2 id="判断if-if-else-if-elif-elif与三元表达式">判断：if， if else ,if elif elif与三元表达式</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -566,7 +599,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="sa"></span><span class="s1">&#39;</span><span class="s1">a</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="n">age</span><span class="o">&gt;</span><span class="mi">50</span> <span class="k">else</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">b</span><span class="s1">&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="137-扩展列表推导式list-comprehensions可迭代对象iterable与迭代器iterator生成器generator">1.3.7 扩展：列表推导式List Comprehensions，可迭代对象Iterable与迭代器iterator,生成器generator</h4>
+</div><h2 id="列表推导式list-comprehensions可迭代对象iterable与迭代器iterator生成器generator">列表推导式List Comprehensions，可迭代对象Iterable与迭代器iterator,生成器generator</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -651,7 +684,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="n">y1</span><span class="o">.</span><span class="n">__next__</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="nb">next</span><span class="p">(</span><span class="n">y1</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="138-捕获并处理异常对象">1.3.8 捕获并处理异常对象</h4>
+</div><h2 id="处理异常">处理异常</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -682,7 +715,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
     <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">executing finally clause</span><span class="s2">&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="139-函数定义">1.3.9 函数定义</h4>
+</div><h2 id="函数定义">函数定义</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -753,7 +786,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">相加后的值为:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span> <span class="p">)</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="1310-filter和map和reduce">1.3.10 filter和map和reduce</h4>
+</div><h2 id="filter和map和reduce">filter和map和reduce</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -800,8 +833,8 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="n">result</span> <span class="o">=</span> <span class="nb">reduce</span><span class="p">(</span><span class="n">add</span><span class="p">,</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="三文件操作">三.文件操作</h2>
-<h3 id="31文件读">3.1.文件读</h3>
+</div><h2 id="文件操作">文件操作</h2>
+<h3 id="文件读">文件读</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -850,7 +883,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
         <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="32文件写">3.2文件写</h3>
+</div><h3 id="文件写">文件写</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -897,7 +930,7 @@ int(a),str(a),eval(x),tuple(x),list(x),chr(x) # 整数转换为字符</p>
 <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">.</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">.py</span><span class="s1">&#39;</span><span class="p">]</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="33-面向对象">3.3 面向对象</h3>
+</div><h2 id="面向对象">面向对象</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
