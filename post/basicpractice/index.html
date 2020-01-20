@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>小练习 -  - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Zen LU" /><meta name="description" content="指定str位置，并更改该位置的值 1 2 1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
+
+
+<link rel="canonical" href="https://lczen.github.io/post/basicpractice/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="小练习" />
+<meta property="og:description" content="指定str位置，并更改该位置的值 1 2 1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lczen.github.io/post/basicpractice/" />
+<meta property="article:published_time" content="2020-01-19T14:31:32+08:00" />
+<meta property="article:modified_time" content="2020-01-20T03:31:38+08:00" />
+<meta itemprop="name" content="小练习">
+<meta itemprop="description" content="指定str位置，并更改该位置的值 1 2 1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input">
+<meta itemprop="datePublished" content="2020-01-19T14:31:32&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-20T03:31:38&#43;08:00" />
+<meta itemprop="wordCount" content="2147">
+
+
+
+<meta itemprop="keywords" content="练习题," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="小练习"/>
+<meta name="twitter:description" content="指定str位置，并更改该位置的值 1 2 1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">lczen</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">lczen</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">小练习</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-01-19 </span>
+        <div class="post-category">
+            <a href="/categories/python%E5%9F%BA%E7%A1%80/"> python基础 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#指定str位置并更改该位置的值">指定str位置，并更改该位置的值</a></li>
+    <li><a href="#找子串的数量">找子串的数量</a></li>
+    <li><a href="#把输入数据封装成元祖">把输入数据封装成元祖</a></li>
+    <li><a href="#列表append随机数">列表append随机数</a></li>
+    <li><a href="#将n个随机的奇数放入列表">将n个随机的奇数放入列表</a></li>
+    <li><a href="#choice">choice</a></li>
+    <li><a href="#输出整数的最大值">输出整数的最大值</a></li>
+    <li><a href="#统计字符串中每个字母的次数">统计字符串中每个字母的次数*</a></li>
+    <li><a href="#输出等腰三角形">输出等腰三角形</a></li>
+    <li><a href="#九九乘法表">九九乘法表</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="指定str位置并更改该位置的值">指定str位置，并更改该位置的值</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input函数） 比如输入： &#39;fkjava.ipg&#39; 6 - 程序输出：&#39;fkjana-ipg&#39;
+我的理解：str不能根据index改变对应位置的值，而list可以。list转换成str用str的join函数。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一个字符串：</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入要修改的位置和要修改成的符号，用空格分开：</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">)</span>   <span class="c1"># 要修改的index</span>
+    <span class="n">sub</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>        <span class="c1"># 要替换的字符</span>
+    <span class="n">list_s</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># 因为字符串是不可变的数据类型，我们字符串变成列表</span>
+    <span class="n">list_s</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>  <span class="c1"># 替换对应位置的字符</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">list_s</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">结果是：</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="找子串的数量">找子串的数量</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2.用户输入一个字符串和一个子串，程序会输出给定的子串在目标字符串中出现的次数。字符串遍历从左到右，而不是从右到左。 例如给定 &#39;ABCDCDC&#39; 和 &#39;CDC&#39; ，程序输出 &#39;2&#39;
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#法一，利用str的find方法</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">输入字符串</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">sub_s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">输入子字符串</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sub_s</span><span class="p">,</span><span class="n">index</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+</span><span class="o">=</span> <span class="mi">1</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sub_s</span><span class="p">,</span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sub_s</span><span class="p">,</span><span class="n">index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+
+<span class="c1">#法二：关键点，s[i:i+len_ss] == ss</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一个字符串：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ss</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入要查找的字串：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>                              <span class="c1"># 创建最后输出用的变量</span>
+<span class="n">len_ss</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ss</span><span class="p">)</span>                     <span class="c1"># 我们的思路是通过切片来取出 s 中的一部分判断是否和子串 ss 一致，所以这里要先知道 ss 的长度</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="n">len_ss</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="p">:</span> <span class="c1"># 防止后面做切片的时候索引超出上界，这里我们先减掉 ss 的长度，最后一位数不被包括，所以 +1</span>
+    <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">ss</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">:</span>                <span class="c1"># 判断每个字符和 ss 开头字符是否匹配</span>
+        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">len_ss</span><span class="p">]</span> <span class="o">==</span> <span class="n">ss</span><span class="p">:</span>      <span class="c1"># 判断接下来的 len_ss 长度的字符是否与 ss 一致</span>
+            <span class="n">num</span> <span class="o">+</span><span class="o">=</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="把输入数据封装成元祖">把输入数据封装成元祖</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">3.提示用户输入N个字符串（N自己定义），将他们封装成元组，然后计算该元组乘以3再加上（&#39;hello&#39;,&#39;world&#39;）的结果。
+keypoint:列表可以强转换成元组，元组+元组=元组
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一些字符串，用空格隔开：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">list_s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">tuple_s</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">list_s</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">tuple_s</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">hello</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">world</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># 主要观察结果的呈现形式，重点理解 元组 * 数字 的含义以及元组之间加法的用法</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">请输入一些字符串，用空格隔开：w
+(&#39;w&#39;, &#39;w&#39;, &#39;w&#39;, &#39;hello&#39;, &#39;world&#39;)
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="列表append随机数">列表append随机数</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">4.用户输入一个整数n，生成长度为n的列表，并将n个随机数放入列表中。（随机数可以参考random库，百度搜索 python random 即可）
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请用户输入一个整数：</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span><span class="c1"># 这里要注意input函数返回的是字符串类型，需要转成整型</span>
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="p">]</span>                           <span class="c1"># 定义一个空列表，用来装后面生成的随机数</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="p">:</span>      <span class="c1"># 循环n次</span>
+    <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>  <span class="c1"># 这里数字范围不限，可以用random库里不同的函数来实现</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="将n个随机的奇数放入列表">将n个随机的奇数放入列表</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">5.用户输入一个整数n，生成长度为n的列表，并将n个随机的奇数放入列表中。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请用户输入一个整数：</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span>
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">num</span>                 <span class="c1"># 这道题我们换一个思路，先生成列表，用0站位，然后我们替换里面的数字</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="p">:</span>          <span class="c1"># 遍历l，对每个0做替换</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>               <span class="c1"># while True 为死循环，当满足条件时我们用break打破循环</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># 生成1-100之间的随机整数</span>
+        <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span>
+            <span class="k">break</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="choice">choice</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">6.用户输入一个整数n，生成长度为n的列表，并将n个随机的大写字符放入列表中。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请用户输入一个整数：</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span> 
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="p">]</span>                                
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="p">:</span>                  
+    <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">abcdefghijklmnopqrstuvwxyz</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>   <span class="c1"># 用upper()变成大写，可以思考还有其他生成随机字符的方式吗？</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="输出整数的最大值">输出整数的最大值</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">7.用户输入以空格分隔的多个整数，输出这些整数的最大值。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#法一 list.sort  列表表达式</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一些整数，以空格分隔：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">list_nums</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">list_int_nums</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">list_nums</span><span class="p">]</span>
+<span class="n">list_int_nums</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">list_int_nums</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">list_int_nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="p">)</span>
+<span class="c1">#法二</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一些整数，以空格分隔：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">list_nums</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">list_int_nums</span> <span class="o">=</span> <span class="p">[</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_nums</span><span class="p">)</span><span class="p">)</span><span class="p">:</span>    <span class="c1"># 第一个循环，我们把所有数字从字符串变成整型</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">list_nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">)</span>
+    <span class="n">list_int_nums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">99999999</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">list_int_nums</span><span class="p">:</span>            <span class="c1"># 第二个循环，a为目前最大数，遍历列表，如果当前数字比a大，把当前值赋值给a</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">i</span>
+<span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">最大的数为：</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="统计字符串中每个字母的次数">统计字符串中每个字母的次数*</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">8.用户输入N个大写字母，使用dict统计用户输入的每个字母的次数。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入一些大写字母：</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span><span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="输出等腰三角形">输出等腰三角形</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">9.使用循环输出等腰三角形，层数由用户输入（input），输出结果如下（输入3）： * * ***
+keypoint:用数学方式去理解，*的规律是2n-1
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">请输入三角形的层数：</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">*</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">请输入三角形的层数：3
+  *  
+ *** 
+*****
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="九九乘法表">九九乘法表</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">10.使用循环输出九九乘法表。输入结果如下： 1 * 1 = 1 1 * 2 = 2 2 * 2 = 4 .......
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">{}x{}={}</span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">)</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">&#39;</span><span class="p">)</span>      <span class="c1"># \t为制表符</span>
+    <span class="k">print</span><span class="p">(</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">1x1=1	
+1x2=2	2x2=4	
+1x3=3	2x3=6	3x3=9	
+1x4=4	2x4=8	3x4=12	4x4=16	
+1x5=5	2x5=10	3x5=15	4x5=20	5x5=25	
+1x6=6	2x6=12	3x6=18	4x6=24	5x6=30	6x6=36	
+1x7=7	2x7=14	3x7=21	4x7=28	5x7=35	6x7=42	7x7=49	
+1x8=8	2x8=16	3x8=24	4x8=32	5x8=40	6x8=48	7x8=56	8x8=64	
+1x9=9	2x9=18	3x9=27	4x9=36	5x9=45	6x9=54	7x9=63	8x9=72	9x9=81	
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Zen LU</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-01-20
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike License</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">练习题</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/regular/">
+            <span class="next-text nav-default">Regular</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+  <a href="https://lczen.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">lczen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

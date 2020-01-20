@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>练习题 on  - A super concise theme for Hugo</title>
+    <link>https://lczen.github.io/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/</link>
+    <description>Recent content in 练习题 on  - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jan 2020 14:31:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://lczen.github.io/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>小练习</title>
+      <link>https://lczen.github.io/post/basicpractice/</link>
+      <pubDate>Sun, 19 Jan 2020 14:31:32 +0800</pubDate>
+      
+      <guid>https://lczen.github.io/post/basicpractice/</guid>
+      <description>指定str位置，并更改该位置的值 1 2 1.实现一个功能，用户输入一个字符串，修改字符串中哪个位置，程序就会输出修改后的结果。（输入用input</description>
+    </item>
+    
+  </channel>
+</rss>

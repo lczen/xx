@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Regular -  - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lczen" /><meta name="description" content="正则表达式 re模块 学习网站：http://regexr.com/ Python通过re模块提供对正则表达式的支持。 使用re的一般步骤是 1.将正" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
+
+
+<link rel="canonical" href="https://lczen.github.io/post/regular/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Regular" />
+<meta property="og:description" content="正则表达式 re模块 学习网站：http://regexr.com/ Python通过re模块提供对正则表达式的支持。 使用re的一般步骤是 1.将正" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lczen.github.io/post/regular/" />
+<meta property="article:published_time" content="2020-01-18T19:36:08+08:00" />
+<meta property="article:modified_time" content="2020-01-18T19:36:08+08:00" />
+<meta itemprop="name" content="Regular">
+<meta itemprop="description" content="正则表达式 re模块 学习网站：http://regexr.com/ Python通过re模块提供对正则表达式的支持。 使用re的一般步骤是 1.将正">
+<meta itemprop="datePublished" content="2020-01-18T19:36:08&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-18T19:36:08&#43;08:00" />
+<meta itemprop="wordCount" content="2906">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Regular"/>
+<meta name="twitter:description" content="正则表达式 re模块 学习网站：http://regexr.com/ Python通过re模块提供对正则表达式的支持。 使用re的一般步骤是 1.将正"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">lczen</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">lczen</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Regular</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-01-18 </span>
+        <div class="post-category">
+            <a href="/categories/python%E5%9F%BA%E7%A1%80/"> python基础 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#正则表达式">正则表达式</a>
+      <ul>
+        <li><a href="#re模块">re模块</a></li>
+        <li><a href="#match">Match</a></li>
+        <li><a href="#pattern匹配与替换">pattern匹配与替换</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="正则表达式">正则表达式</h2>
+<p><img src="http://life.chinaunix.net/bbsfile/forum/month_1012/101218124873e7f28d80d99801.jpg" alt=""></p>
+<h3 id="re模块">re模块</h3>
+<p>学习网站：<a href="http://regexr.com/">http://regexr.com/</a>
+Python通过re模块提供对正则表达式的支持。</p>
+<p>使用re的一般步骤是</p>
+<ul>
+<li>1.将正则表达式的字符串形式编译为Pattern实例</li>
+<li>2.使用Pattern实例处理文本并获得匹配结果（一个Match实例）</li>
+<li>3.使用Match实例获得信息，进行其他的操作。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># encoding: UTF-8</span>
+<span class="kn">import</span> <span class="nn">re</span>
+ 
+<span class="c1"># 将正则表达式编译成Pattern对象</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">hello.*</span><span class="s1">\</span><span class="s1">!</span><span class="s1">&#39;</span><span class="p">)</span>
+ 
+<span class="c1"># 使用Pattern匹配文本，获得匹配结果，无法匹配时将返回None</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">hello, hanxiaoyang! How are you?</span><span class="s1">&#39;</span><span class="p">)</span>
+ 
+<span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+    <span class="c1"># 使用Match获得分组信息</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>re.compile(strPattern[, flag]):</strong></p>
+<p>这个方法是Pattern类的工厂方法，用于将字符串形式的正则表达式编译为Pattern对象。</p>
+<p>第二个参数flag是匹配模式，取值可以使用按位或运算符'|'表示同时生效，比如re.I | re.M。</p>
+<p>当然，你也可以在regex字符串中指定模式，比如<strong>re.compile(&lsquo;pattern&rsquo;, re.I | re.M)<strong>等价于</strong>re.compile('(?im)pattern&rsquo;)</strong></p>
+<p>flag可选值有：</p>
+<ul>
+<li>re.I(re.IGNORECASE): 忽略大小写（括号内是完整写法，下同）</li>
+<li>re.M(MULTILINE): 多行模式，改变'^'和'$'的行为（参见上图）</li>
+<li>re.S(DOTALL): 点任意匹配模式，改变&rsquo;.&lsquo;的行为</li>
+<li>re.L(LOCALE): 使预定字符类 \w \W \b \B \s \S 取决于当前区域设定</li>
+<li>re.U(UNICODE): 使预定字符类 \w \W \b \B \s \S \d \D 取决于unicode定义的字符属性</li>
+<li>re.X(VERBOSE): 详细模式。这个模式下正则表达式可以是多行，忽略空白字符，并可以加入注释。以下两个正则表达式是等价的：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">regex_1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;&#34;&#34;</span><span class="s2">\</span><span class="s2">d +  # 数字部分</span><span class="s2">
+</span><span class="s2"></span><span class="s2">                         </span><span class="s2">\</span><span class="s2">.    # 小数点部分</span><span class="s2">
+</span><span class="s2"></span><span class="s2">                         </span><span class="s2">\</span><span class="s2">d *  # 小数的数字部分</span><span class="s2">&#34;&#34;&#34;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+<span class="n">regex_2</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;</span><span class="s2">\</span><span class="s2">d+</span><span class="s2">\</span><span class="s2">.</span><span class="s2">\</span><span class="s2">d*</span><span class="s2">&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="match">Match</h3>
+<p><strong><a href="http://www.chinahadoop.cn/course/landpage/15">小象学院</a>《机器学习集训营》课程资料 by <a href="https://blog.csdn.net/han_xiaoyang">@寒小阳</a></strong></p>
+<p>Match对象是一次匹配的结果，包含了很多关于此次匹配的信息，可以使用Match提供的可读属性或方法来获取这些信息。</p>
+<p><strong>match属性：</strong></p>
+<ul>
+<li>string: 匹配时使用的文本。</li>
+<li>re: 匹配时使用的Pattern对象。</li>
+<li>pos: 文本中正则表达式开始搜索的索引。值与Pattern.match()和Pattern.seach()方法的同名参数相同。</li>
+<li>endpos: 文本中正则表达式结束搜索的索引。值与Pattern.match()和Pattern.seach()方法的同名参数相同。</li>
+<li>lastindex: 最后一个被捕获的分组在文本中的索引。如果没有被捕获的分组，将为None。</li>
+<li>lastgroup: 最后一个被捕获的分组的别名。如果这个分组没有别名或者没有被捕获的分组，将为None。</li>
+</ul>
+<p><strong>match方法：</strong></p>
+<ul>
+<li>group([group1, …]): <!-- raw HTML omitted -->
+获得一个或多个分组截获的字符串；指定多个参数时将以元组形式返回。group1可以使用编号也可以使用别名；编号0代表整个匹配的子串；不填写参数时，返回group(0)；没有截获字符串的组返回None；截获了多次的组返回最后一次截获的子串。</li>
+<li>groups([default]): <!-- raw HTML omitted -->
+以元组形式返回全部分组截获的字符串。相当于调用group(1,2,…last)。default表示没有截获字符串的组以这个值替代，默认为None。</li>
+<li>groupdict([default]): <!-- raw HTML omitted -->
+返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。</li>
+<li>start([group]): <!-- raw HTML omitted -->
+返回指定的组截获的子串在string中的起始索引（子串第一个字符的索引）。group默认值为0。</li>
+<li>end([group]): <!-- raw HTML omitted -->
+返回指定的组截获的子串在string中的结束索引（子串最后一个字符的索引+1）。group默认值为0。</li>
+<li>span([group]): <!-- raw HTML omitted -->
+返回(start(group), end(group))。</li>
+<li>expand(template): <!-- raw HTML omitted -->
+将匹配到的分组代入template中然后返回。template中可以使用\id或\g<!-- raw HTML omitted -->、\g<!-- raw HTML omitted -->引用分组，但不能使用编号0。\id与\g<!-- raw HTML omitted -->是等价的；但\10将被认为是第10个分组，如果你想表达\1之后是字符'0&rsquo;，只能使用\g&lt;1&gt;0。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">(</span><span class="s1">\</span><span class="s1">w+) (</span><span class="s1">\</span><span class="s1">w+)(?P&lt;sign&gt;.*)</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">hello hanxiaoyang!</span><span class="s1">&#39;</span><span class="p">)</span><span class="c1">#?P&lt;sign&gt;.*是标点的意思</span>
+ 
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.string:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">string</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.re:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">re</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.pos:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">pos</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.endpos:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">endpos</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.lastindex:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">lastindex</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.lastgroup:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">lastgroup</span>
+ 
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.group(1,2):</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.groups():</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">groups</span><span class="p">(</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.groupdict():</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">groupdict</span><span class="p">(</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.start(2):</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.end(2):</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">m.span(2):</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">span</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="sa">r</span><span class="s2">&#34;</span><span class="s2">m.expand(r</span><span class="s2">&#39;</span><span class="s2">\</span><span class="s2">2 </span><span class="s2">\</span><span class="s2">1</span><span class="s2">\</span><span class="s2">3</span><span class="s2">&#39;</span><span class="s2">):</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">\</span><span class="s1">2 </span><span class="s1">\</span><span class="s1">1</span><span class="s1">\</span><span class="s1">3</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">m.string: hello hanxiaoyang!
+m.re: &lt;_sre.SRE_Pattern object at 0x10b111be0&gt;
+m.pos: 0
+m.endpos: 18
+m.lastindex: 3
+m.lastgroup: sign
+m.group(1,2): (&#39;hello&#39;, &#39;hanxiaoyang&#39;)
+m.groups(): (&#39;hello&#39;, &#39;hanxiaoyang&#39;, &#39;!&#39;)
+m.groupdict(): {&#39;sign&#39;: &#39;!&#39;}
+m.start(2): 6
+m.end(2): 17
+m.span(2): (6, 17)
+m.expand(r&#39;\2 \1\3&#39;): hanxiaoyang hello!
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Pattern对象是一个编译好的正则表达式，通过Pattern提供的一系列方法可以对文本进行匹配查找。
+
+Pattern不能直接实例化，必须使用re.compile()进行构造。
+
+Pattern提供了几个可读属性用于获取表达式的相关信息：
+* pattern: 编译时用的表达式字符串。
+* flags: 编译时用的匹配模式。数字形式。
+* groups: 表达式中分组的数量。
+* groupindex: 以表达式中有别名的组的别名为键、以该组对应的编号为值的字典，没有别名的组不包含在内。
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">(</span><span class="s1">\</span><span class="s1">w+) (</span><span class="s1">\</span><span class="s1">w+)(?P&lt;sign&gt;.*)</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span>
+ 
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">p.pattern:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">pattern</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">p.flags:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">flags</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">p.groups:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">groups</span>
+<span class="k">print</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">p.groupindex:</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">groupindex</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">p.pattern: (\w+) (\w+)(?P&lt;sign&gt;.*)
+p.flags: 16
+p.groups: 3
+p.groupindex: {&#39;sign&#39;: 3}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="pattern匹配与替换">pattern匹配与替换</h3>
+<ul>
+<li><strong>match(string[, pos[, endpos]]) | re.match(pattern, string[, flags])</strong>: <!-- raw HTML omitted -->
+<strong>这个方法将从string的pos下标处起尝试匹配pattern</strong>:
+<ul>
+<li>如果pattern结束时仍可匹配，则返回一个Match对象</li>
+<li>如果匹配过程中pattern无法匹配，或者匹配未结束就已到达endpos，则返回None。</li>
+<li>pos和endpos的默认值分别为0和len(string)。 <!-- raw HTML omitted -->
+**注意：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符'$&rsquo;。 **</li>
+</ul>
+</li>
+<li><strong>search(string[, pos[, endpos]]) | re.search(pattern, string[, flags])</strong>: <!-- raw HTML omitted -->
+<strong>这个方法从string的pos下标处起尝试匹配pattern</strong>
+<ul>
+<li>如果pattern结束时仍可匹配，则返回一个Match对象</li>
+<li>若无法匹配，则将pos加1后重新尝试匹配，直到pos=endpos时仍无法匹配则返回None。</li>
+<li>pos和endpos的默认值分别为0和len(string))</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># encoding: UTF-8 </span>
+<span class="kn">import</span> <span class="nn">re</span> 
+ 
+<span class="c1"># 将正则表达式编译成Pattern对象 </span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">H.*g</span><span class="s1">&#39;</span><span class="p">)</span> 
+ 
+<span class="c1"># 使用search()查找匹配的子串，不存在能匹配的子串时将返回None </span>
+<span class="c1"># 这个例子中使用match()无法成功匹配 </span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">hello Hanxiaoyang!</span><span class="s1">&#39;</span><span class="p">)</span> 
+ 
+<span class="k">if</span> <span class="n">match</span><span class="p">:</span> 
+    <span class="c1"># 使用Match获得分组信息 </span>
+    <span class="k">print</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="p">)</span><span class="c1">#Hanxiaoyang</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>split(string[, maxsplit]) | re.split(pattern, string[, maxsplit]):</strong>
+<ul>
+<li>按照能够匹配的子串将string分割后返回列表。</li>
+<li>maxsplit用于指定最大分割次数，不指定将全部分割。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+ 
+<span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">\</span><span class="s1">d+</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">p</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">one12306two2three3four4</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[&#39;one&#39;, &#39;two&#39;, &#39;three&#39;, &#39;four&#39;, &#39;&#39;]
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>findall(string[, pos[, endpos]]) | re.findall(pattern, string[, flags])</strong>:
+<ul>
+<li>搜索string，以列表形式返回全部能匹配的子串。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+ 
+<span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">\</span><span class="s1">d+</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">p</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">one12306two2three3four4</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[&#39;12306&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>**finditer(string[, pos[, endpos]]) | re.finditer(pattern, string[, flags]): **
+<ul>
+<li>搜索string，返回一个顺序访问每一个匹配结果（Match对象）的迭代器。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+ 
+<span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">\</span><span class="s1">d+</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">one1two2three3four4</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">1
+2
+3
+4
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>**sub(repl, string[, count]) | re.sub(pattern, repl, string[, count]): **
+<ul>
+<li>使用repl替换string中每一个匹配的子串后返回替换后的字符串。
+<ul>
+<li>当repl是一个字符串时，可以使用\id或\g<!-- raw HTML omitted -->、\g<!-- raw HTML omitted -->引用分组，但不能使用编号0。</li>
+<li>当repl是一个方法时，这个方法应当只接受一个参数（Match对象），并返回一个字符串用于替换（返回的字符串中不能再引用分组）。
+count用于指定最多替换次数，不指定时全部替换。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">re</span>
+ 
+<span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">(</span><span class="s1">\</span><span class="s1">w+) (</span><span class="s1">\</span><span class="s1">w+)</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">i say, hello hanxiaoyang!</span><span class="s1">&#39;</span>
+ 
+<span class="k">print</span> <span class="n">p</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">\</span><span class="s1">2 </span><span class="s1">\</span><span class="s1">1</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+ 
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="p">)</span> <span class="o">+</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1"> </span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="p">)</span>
+ 
+<span class="k">print</span> <span class="n">p</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">say i, hanxiaoyang hello!
+I Say, Hello Hanxiaoyang!
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>**subn(repl, string[, count]) |re.sub(pattern, repl, string[, count]): **
+<ul>
+<li>返回 (sub(repl, string[, count]), 替换次数)。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import re
+ 
+p = re.compile(r&#39;(\w+) (\w+)&#39;)
+s = &#39;i say, hello hanxiaoyang!&#39;
+ 
+print p.subn(r&#39;\2 \1&#39;, s)
+ 
+def func(m):
+    return m.group(1).title() + &#39; &#39; + m.group(2).title()
+ 
+print p.subn(func, s)
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">(&#39;say i, hanxiaoyang hello!&#39;, 2)
+(&#39;I Say, Hello Hanxiaoyang!&#39;, 2)
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">lczen</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-01-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/basicpractice/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">小练习</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/python/">
+            <span class="next-text nav-default">Python学习</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+  <a href="https://lczen.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">lczen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
